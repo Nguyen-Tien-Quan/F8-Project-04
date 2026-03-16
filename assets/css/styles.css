@@ -788,6 +788,9 @@ a {
 .pricing__heading {
     text-align: center;
 }
+.pricing__desc {
+    text-align: center;
+}
 
 .section-desc {
     --width: 709px;
