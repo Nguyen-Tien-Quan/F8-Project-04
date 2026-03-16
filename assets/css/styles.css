@@ -875,6 +875,10 @@ a {
     background: #fff;
 }
 
+.pricing-item.pricing-item--active {
+    box-shadow: 0 20px 44px 0 rgba(195, 108, 22, 0.06);
+}
+
 .pricing-item__type {
     color: #ff5b2e;
     font-size: 1.2rem;
@@ -931,4 +935,237 @@ a {
     margin-right: 14px;
     color: #ff5b2e;
     content: url(../icon/pricing-check.svg);
+}
+
+/* Review */
+.review {
+    padding: 104px 0 52px;
+}
+
+.review__inner {
+    column-gap: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.review__control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    color: #ff5b2e;
+    background-color: transparent;
+    border: 1.5px solid #ffd1c4;
+    cursor: pointer;
+}
+
+.review__control:nth-of-type(2) {
+    rotate: 180deg;
+    margin-left: auto;
+}
+
+.review__control:hover {
+    border-color: #ff5b2e;
+    background: #ff5b2e;
+    color: #fff;
+    box-shadow: 0 5px 27px 0 rgba(255, 91, 46, 0.3);
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    column-gap: 115px;
+    width: 100%;
+}
+
+.review-item__media {
+    position: relative;
+    width: 274px;
+    border-radius: 137px;
+    flex-shrink: 0;
+    margin-top: -52px;
+}
+
+.review-item__media::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 82%;
+    inset: auto 0 0 0;
+    border-radius: inherit;
+    background: #ffda54;
+}
+
+.review-item__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: inherit;
+    width: 100%;
+}
+
+.review-item__content {
+    margin-top: 28px;
+}
+
+.review-item__quote {
+    width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55; /* 155.556% */
+}
+
+.review-item__author {
+    position: relative;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    padding-left: 28px;
+}
+
+.review-item__author::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    border-radius: 2px;
+    transform: translateY(-50%);
+}
+
+.dots {
+    margin-top: 56px;
+    width: 100%;
+    column-gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #ff5b2e;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #ff5b2e;
+}
+
+.dot.dot--active {
+    width: 24px;
+    height: 8px;
+    border-radius: 99px;
+    background: #ff5b2e;
+}
+
+/* Blog */
+.blog {
+    padding: 78px 0;
+    margin-bottom: 52px;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-content__wrap {
+    padding-right: 74px;
+}
+
+.blog-content__desc {
+    --width: 350px;
+    margin-top: 0;
+}
+
+.blog-content__btn {
+    border: 1px solid #ff5b2e90;
+    margin-top: 24px;
+    --min-width: 182px;
+    box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 54px;
+    column-gap: 48px;
+}
+
+.blog-item__media {
+    position: relative;
+    padding: 24px 0 0 36px;
+    width: 358px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+
+.blog-item:nth-child(2) .blog-item__media {
+    background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__media {
+    background: #5bd6e2;
+}
+
+.blog-item__time {
+    display: inline-block;
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.blog-item__img {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+    /* border-bottom-right-radius: inherit; */
+}
+
+.blog-item__content {
+    padding: 28px 14px 0 0;
+}
+
+.blog-item__heading {
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54; /* 154.545% */
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
 }
